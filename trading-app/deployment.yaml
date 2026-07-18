@@ -21,7 +21,7 @@ spec:
         containers:
             - name: trading-app
               image: your-docker-registry/trading-app:v1
-              imagePullPolicy: Never
+              imagePullPolicy: IfNotPresent
               ports:
                 - containerPort: 8080
 
@@ -32,3 +32,10 @@ spec:
                   value: postgres
                 - name: SPRING_DATASOURCE_PASSWORD
                   value: user123
+                - name: SPRING_REDIS_HOST
+                  value: redis-service
+                - name: SPRING_REDIS_PORT
+                  value: "6379"
+
+
+

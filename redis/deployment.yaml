@@ -6,7 +6,7 @@
     namespace: trading-app
 
 
- spec:
+  spec:
    replicas: 1
 
    selector:
