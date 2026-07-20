@@ -18,9 +18,11 @@ spec:
           app: trading-app
 
       spec:
+        imagePullSecrets:
+          - name : ghcr-secret
         containers:
             - name: trading-app
-              image: your-docker-registry/trading-app:v1
+              image: ghcr.io/somu-freewheel/trading-app:initial
               imagePullPolicy: IfNotPresent
               ports:
                 - containerPort: 8080
