@@ -10,7 +10,7 @@ spec:
     app: trading-app
 
   ports:
-    - port: 8080
+    - port: 8080 #local host and container live host will  be different 
       targetPort: 8080
 
-  type: NodePort
+  type: NodePort #Load Balancer
