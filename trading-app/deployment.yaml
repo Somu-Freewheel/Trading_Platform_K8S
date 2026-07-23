@@ -27,7 +27,7 @@ spec:
           - name : ghcr-secret
         containers:
             - name: trading-app
-              image: ghcr.io/somu-freewheel/trading-app:5ca3375fd96b0dc80ab56633333b2bd3e8ab3f75
+              image: ghcr.io/somu-freewheel/trading-app:4caf31c43942c3e41afb9046121e6d596bf33b18
               imagePullPolicy: IfNotPresent
               ports:
                 - containerPort: 8080
