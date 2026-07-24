@@ -10,5 +10,6 @@ resources:
     - redis/service.yaml
     - trading-app/deployment.yaml
     - trading-app/service.yaml
+    - monitoring/trading-app-servicemonitor.yaml
 
   
