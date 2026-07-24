@@ -4,6 +4,8 @@ kind: Service
 metadata:
   name: trading-app-service
   namespace: trading-app
+  labels:
+    app: trading-app
 
 spec:
   selector:
